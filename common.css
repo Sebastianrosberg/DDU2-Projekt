@@ -1,0 +1,40 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstInput {
+    padding: 6px;
+}
+
+#secondInput {
+    padding: 6px;
+}
+
+#grid {
+    width: 30px;
+    text-align: center;
+}
+
+#sum {
+    width: 70px;
+    text-align: center;
+}
+
+#longBox {
+    width: 500px;
+    text-align: center;
+}
+
+#add {
+    width: 80px;
+    text-align: center;
+}
