@@ -10,16 +10,17 @@ const gridInput = document.getElementById("grid");
 const main = document.createElement("main");
 document.body.appendChild(main);
 let randomNumberArray = [];
+let divsInMain = []
 
-
-
-createButton.addEventListener("click", function () {
+function createDivs(input) {
     main.innerHTML = " ";
-    for (let i = 0; i < gridInput.value; i++) {
+    let randomNumberArray = [];
+    for (let i = 0; i < input; i++) {
         let randomNumber = Math.floor(Math.random() * 100);
         randomNumberArray.push(randomNumber);
         const randomNumberDiv = document.createElement("div");
         main.appendChild(randomNumberDiv);
+
         randomNumberDiv.style.backgroundColor = "lightgrey";
         randomNumberDiv.textContent = randomNumber;
         randomNumberDiv.style.textAlign = "center";
@@ -27,6 +28,17 @@ createButton.addEventListener("click", function () {
         randomNumberDiv.style.margin = "2px";
         randomNumberDiv.style.padding = "6px";
     }
+    divsInMain = main.querySelectorAll("div")
+}
+
+
+
+createButton.addEventListener("click", function () {
+    createDivs(gridInput.value);
 })
+
+createDivs(95);
+
+
 
 
