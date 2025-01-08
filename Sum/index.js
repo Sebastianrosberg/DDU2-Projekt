@@ -1,6 +1,7 @@
 const sumOfAllBox = document.getElementById("sumOfAll");
 const sumOfMarkedBoxes = document.getElementById("sumOfMarked")
 const resetButton = document.getElementById("resetSum")
+sumOfMarkedBoxes.value = `-`
 let sumOfDiv = 0;
 
 function updateSum() {

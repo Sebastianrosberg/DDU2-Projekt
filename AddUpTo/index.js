@@ -1,6 +1,6 @@
 const findButton = document.getElementById("findButton");
 const valueOfTwoCells = document.getElementById("sumOfTwoCells")
-
+valueOfTwoCells.value = `179`
 
 findButton.addEventListener("click", function () {
     let foundMatch = false

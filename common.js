@@ -5,12 +5,14 @@
 //Få ut ett nummber mellan 0-99, 99 gånger.
 //Gör ett grid rutnät.
 //
+const createValue = document.getElementById("grid")
 const createButton = document.getElementById("create");
 const gridInput = document.getElementById("grid");
 const main = document.createElement("main");
 document.body.appendChild(main);
 let randomNumberArray = [];
 let divsInMain;
+createValue.value = `95`
 
 function createDivs(input) {
     main.innerHTML = " ";

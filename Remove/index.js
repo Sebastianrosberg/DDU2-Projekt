@@ -3,6 +3,9 @@ const addInput = document.getElementById("addInput")
 const removeButton = document.getElementById("remove");
 const removeInput = document.getElementById("removeInput")
 
+addInput.value = `-`
+removeInput.value = `-`
+
 
 randomInput = 0;
 addButton.addEventListener("click", function () {
