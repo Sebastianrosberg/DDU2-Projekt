@@ -10,7 +10,7 @@ const gridInput = document.getElementById("grid");
 const main = document.createElement("main");
 document.body.appendChild(main);
 let randomNumberArray = [];
-let divsInMain = []
+let divsInMain;
 
 function createDivs(input) {
     main.innerHTML = " ";
@@ -19,6 +19,7 @@ function createDivs(input) {
         let randomNumber = Math.floor(Math.random() * 100);
         randomNumberArray.push(randomNumber);
         const randomNumberDiv = document.createElement("div");
+        randomNumberDiv.classList.add("numberDivs")
         main.appendChild(randomNumberDiv);
 
         randomNumberDiv.style.backgroundColor = "lightgrey";
@@ -28,13 +29,14 @@ function createDivs(input) {
         randomNumberDiv.style.margin = "2px";
         randomNumberDiv.style.padding = "6px";
     }
-    divsInMain = main.querySelectorAll("div")
+    divsInMain = main.querySelectorAll("main div")
 }
 
 
 
 createButton.addEventListener("click", function () {
     createDivs(gridInput.value);
+    updateSum()
 })
 
 createDivs(95);
