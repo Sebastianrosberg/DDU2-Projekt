@@ -18,6 +18,7 @@ addButton.addEventListener("click", function () {
         }
         if (divsInMain[i].textContent == randomInput) {
             divsInMain[i].style.backgroundColor = "orange";
+            divsInMain[i].classList.add("orangeDiv");
         }
     }
     return randomInput
@@ -31,6 +32,7 @@ removeButton.addEventListener("click", function () {
             divsInMain[i].style.backgroundColor = "red"
             divsInMain[i].textContent = "X"
             numCounter++
+            divsInMain[i].classList.remove("orangeDiv")
 
 
             isFound = true;
@@ -59,14 +61,9 @@ main.addEventListener("mouseout", function (event) {
     if (event.target.style.backgroundColor == "moccasin") {
         event.target.style.backgroundColor = "lightgrey"
     }
-    if (event.target.style.backgroundColor == "moccasin") {
-        event.target.style.backgroundColor == "orange"
+    if (event.target.classList.contains("orangeDiv")) {
+        event.target.style.backgroundColor = "orange"
     }
 })
 
-main.addEventListener("mouseout", function (event) {
-    console.log("red")
-    if (event.target.style.backgroundColor == "lightpink") {
-        event.target.style.backgroundColor == "red"
-    }
-})
+

@@ -38,7 +38,7 @@ function createDivs(input) {
 
 createButton.addEventListener("click", function () {
     createDivs(gridInput.value);
-    updateSum()
+    updateSum();
 })
 
 createDivs(95);
