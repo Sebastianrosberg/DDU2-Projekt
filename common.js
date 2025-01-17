@@ -1,10 +1,4 @@
 
-
-
-
-//Få ut ett nummber mellan 0-99, 99 gånger.
-//Gör ett grid rutnät.
-//
 const createValue = document.getElementById("grid")
 const createButton = document.getElementById("create");
 const gridInput = document.getElementById("grid");

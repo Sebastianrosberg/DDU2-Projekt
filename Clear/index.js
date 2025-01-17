@@ -1,8 +1,6 @@
 const clearButton = document.getElementById("clear")
 
 
-
-
 main.addEventListener("mouseover", function (event) {
     if (event.target.classList.contains("numberDivs"))
 

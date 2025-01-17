@@ -2,8 +2,11 @@ const findButton = document.getElementById("findButton");
 const valueOfTwoCells = document.getElementById("sumOfTwoCells")
 valueOfTwoCells.value = `179`
 
-findButton.addEventListener("click", function () {
+findButton.addEventListener("click", function (event) {
     let foundMatch = false
+    for (let divs of divsInMain) {
+        divs.style.backgroundColor = "lightgrey"
+    }
     for (let i = 0; i < divsInMain.length; i++) {
         for (let j = i + 1; j < divsInMain.length; j++) {
 
